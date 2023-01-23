@@ -2,6 +2,9 @@ package com.epam.rd.autotasks;
 
 class CycleSwap {
     static void cycleSwap(int[] array) {
+        if(array.length==0){
+            return;
+        }
         int n =array.length;
         int temp = array[n-1];
         for(int i=n-1;i>0;i--)
