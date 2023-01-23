@@ -2,14 +2,15 @@ package com.epam.rd.autotasks;
 
 class CycleSwap {
     static void cycleSwap(int[] array) {
-        int temp = array[0];
-        for(int i=1;i<array.length;i++)
-            array[i-1]=array[i];
+        int n =array.length;
+        int temp = array[n-1];
+        for(int i=n-1;i>0;i--)
+            array[i]=array[i-1];
         array[array.length-1]=temp;
     }
 
     static void cycleSwap(int[] array, int shift) {
-        for(int i=0;i<shift+1;i++){
+        for(int i=0;i<shift;i++){
             cycleSwap(array);
         }
     }
