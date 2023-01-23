@@ -10,6 +10,9 @@ class CycleSwap {
     }
 
     static void cycleSwap(int[] array, int shift) {
+        if(array.length==0){
+            return;
+        }
         for(int i=0;i<shift;i++){
             cycleSwap(array);
         }
