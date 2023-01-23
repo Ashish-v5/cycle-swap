@@ -9,7 +9,7 @@ class CycleSwap {
     }
 
     static void cycleSwap(int[] array, int shift) {
-        for(int i=0;i<shift;i++){
+        for(int i=0;i<shift+1;i++){
             cycleSwap(array);
         }
     }
