@@ -6,7 +6,7 @@ class CycleSwap {
         int temp = array[n-1];
         for(int i=n-1;i>0;i--)
             array[i]=array[i-1];
-        array[array.length-1]=temp;
+        array[0]=temp;
     }
 
     static void cycleSwap(int[] array, int shift) {
